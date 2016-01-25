@@ -74,7 +74,7 @@
 
 可视化配置如下：
 
-![OS X 配置](img/karabiner_osx.png)
+![OS X 配置](img/karabiner-osx.png)
 
 1. 按下 Eject 键机器睡眠（ Ctrl + Shift + Eject 组合键）
 2. 影射 F1-12 功能键为 Mac 原生的功能
