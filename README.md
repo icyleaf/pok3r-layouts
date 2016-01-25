@@ -32,12 +32,12 @@
   * L_Option: `L_WIN` -> `L_Alt` -> `PN`
   * R_CMD: `R_Alt` -> `R_FN` (Win) -> `PN`
   * R_Option: `R_FN` (Win) -> `R_Alt` -> `PN`
-* `FN + R_Ctrl` to exit programming
+* `FN + R_Ctrl` 退出编程模式
 
 可视化键盘布局如下:
 
 ![OSX 布局](img/layout-osx.png)
-OSX Layout on [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com/##@_name=Pok3r%20Layer%203%20for%20OSX%2F%2FMac&author=davidjenni&notes=See%20%5Bgithub%5D(https%2F:%2F%2F%2F%2Fgithub.com%2F%2Fdavidjenni%2F%2Fpok3r-layouts)%3B&@_y:1.5&c=%233c4041&t=%23aba18b&p=DCS&a:5%3B&=%0A%0A%0A%0A%60%20~%0A%0AEsc&_a:4%3B&=!%0A1%0A%0A%0AF1&=%2F@%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&=%5E%0A6%0A%0A%0AF6&=%2F&%0A7%0A%0A%0AF7&=*%0A8%0A%0A%0AF8&=(%0A9%0A%0A%0AF9&=)%0A0%0A%0A%0AF10&=%2F_%0A-%0A%0A%0AF11&=+%0A%2F=%0A%0A%0AF12&_w:2%3B&=%0ABackspace%0A%0A%0ADel%3B&@_w:1.5%3B&=%0ATab&=Q&=W&=E&=R%0A%0A%0A%0AReset&=T%0A%0A%0A%0A15ms&=Y%0A%0A%0A%0ACal&=U%0A%0A%0A%0APgUp&_c=%23c7c3b5&t=%23ba1312%3B&=I%0A%0A%0A%0AHome&_c=%233c4041&t=%23aba18b%3B&=O%0A%0A%0A%0APgDn&=P%0A%0A%0A%0APrtSc&=%7B%0A%5B%0A%0A%0AScrlk&=%7D%0A%5D%0A%0A%0APause&_w:1.5%3B&=%7C%0A%5C%3B&@_c=%23c7c3b5&t=%23ba1312&w:1.25&w2:1.75%3B&=%0ACtrl&_x:0.5&c=%233c4041&t=%23aba18b%3B&=A&=S&=D&_c=%23c7c3b5&t=%23ba1312%3B&=F%0A%0A%0A%0APgDn&_c=%233c4041&t=%23aba18b%3B&=G%0A%0A%0A%0A0.1s&_c=%23c7c3b5&t=%23ba1312%3B&=H%0A%0A%0A%0ALeft&=J%0A%0A%0A%0ADown&=K%0A%0A%0A%0AUp&=L%0A%0A%0A%0ARight&_c=%233c4041&t=%23aba18b%3B&=%2F:%0A%2F%3B%0A%0A%0AIns&=%22%0A'%0A%0A%0ADel&_w:2.25%3B&=%0AEnter%3B&@_w:2.25%3B&=%0AShift&=Z&=X&=C&=V&_c=%23c7c3b5&t=%23ba1312%3B&=B%0A%0A%0A%0APgUp&_c=%233c4041&t=%23aba18b%3B&=N%0A%0A%0A%0AEnd&=M%0A%0A%0A%0ADefault&=%3C%0A,%0A%0A%0ALayer%202&=%3E%0A.%0A%0A%0ALayer%203&=%3F%0A%2F%2F%0A%0A%0ALayer%204&_w:2.75%3B&=%0AShift%3B&@_c=%23c7c3b5&t=%23ba1312&w:1.25%3B&=%0AFN&_w:1.25%3B&=%0AOption&_w:1.25%3B&=%0ACMD&_c=%233c4041&t=%23aba18b&p=DCS%20SPACE&w:6.25%3B&=&_c=%23c7c3b5&t=%23ba1312&p=DCS&w:1.25%3B&=%0ACMD&_w:1.25%3B&=%0AOption&_c=%233c4041&t=%23aba18b&w:1.25%3B&=%0APn&_w:1.25%3B&=%0ACtrl)
+[keyboard-layout-editor.com](http://www.keyboard-layout-editor.com/##@_backcolor=%233b3a3a&name=POK3R%20white%20version%20for%20OS%20X&author=icyleaf.cn%2F@gmail.com&switchMount=cherry&switchBrand=cherry&switchType=MX1A-11xx&pcb:true%3B&@_c=%2379bbec&t=%23ba1312&a:5%3B&=%0A~%0A%0A%0AEsc%0A%0A%60&_c=%23cccccc&t=%23000000&a:4%3B&=!%0A1%0A%0A%0AF1&=%2F@%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&=%5E%0A6%0A%0A%0AF6&=%2F&%0A7%0A%0A%0AF7&=*%0A8%0A%0A%0AF8&=(%0A9%0A%0A%0AF9&=)%0A0%0A%0A%0AF10&=%2F_%0A-%0A%0A%0AF11&=+%0A%2F=%0A%0A%0AF12&_w:2%3B&=%0A%0A%0ABackspace%0ADEL%3B&@_w:1.5%3B&=%0ATab&=Q&=W&=E&=R%0A%0A%0A%0AReset&=T%0A%0A%0A%0A15ms&=Y%0A%0A%0A%0ACal&=U%0A%0A%0A%0APgUp&_c=%2379bbec&t=%23ba1312%3B&=I%0A%0A%0A%0AHome&_c=%23cccccc&t=%23000000%3B&=O%0A%0A%0A%0APgDw&=P%0A%0A%0A%0AEnd&_c=%23c4c8c5%3B&=%7B%0A%5B%0A%0A%0AScrlk&=%7D%0A%5D%0A%0A%0APause&_c=%23cccccc&w:1.5%3B&=%7C%0A%5C%3B&@_c=%2379bbec&t=%23ba1312&w:1.75%3B&=%0ACtrl&_c=%23cccccc&t=%23000000%3B&=A&=S%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Multimedia-Volume-Down-1'%3E%3C%2F%2Fi%3E&=D%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Multimedia-Volume-Up-1'%3E%3C%2F%2Fi%3E&=F%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Multimedia-Mute-1'%3E%3C%2F%2Fi%3E&=G%0A%0A%0A%0A0.1s&_c=%2379bbec&t=%23ba1312%3B&=H%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Arrows-Left'%3E%3C%2F%2Fi%3E&=J%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Arrows-Down'%3E%3C%2F%2Fi%3E&=K%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Arrows-Up'%3E%3C%2F%2Fi%3E&_t=%23000000%3B&=L%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Arrows-Right'%3E%3C%2F%2Fi%3E&_c=%23cccccc%3B&=%2F:%0A%2F%3B%0A%0A%0AIns&=%22%0A'%0A%0A%0ADel&_st=MX3A-L1xx&w:2.25%3B&=%0A%0A%0AEnter%3B&@_st=&w:2.25%3B&=%0AShift&=Z%0A%0A%0A%0AApp&=X&=C%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Unicode-Screen-Dim'%3E%3C%2F%2Fi%3E&=V%0A%0A%0A%0A%3Ci%20class%2F='kb%20kb-Unicode-Screen-Bright'%3E%3C%2F%2Fi%3E&=B%0A%0A%0A%0A0.5s&_c=%23c4c8c5%3B&=N%0A%0A%0A%0AEnd&_c=%23cccccc%3B&=M%0A%0A%0A%0ADefault&=%3C%0A,%0A%0A%0AL2&=%3E%0A.%0A%0A%0AL3&=%3F%0A%2F%2F%0A%0A%0AL4&_w:2.75%3B&=%0A%0A%0AShift%3B&@_c=%2379bbec&t=%23ba1312&w:1.25%3B&=%0AFn&_w:1.25%3B&=%0AAlt&_w:1.25%3B&=%0ACmd&_c=%23cccccc&t=%23000000&a:7&w:6.25%3B&=&_c=%2379bbec&t=%23ba1312&a:4&w:1.25%3B&=%0A%0A%0ACmd&_w:1.25%3B&=%0A%0A%0AAlt&_c=%23cccccc&t=%23000000&w:1.25%3B&=%0A%0A%0APn&_w:1.25%3B&=%0A%0A%0ACtrl) 可编辑键盘布局的链接
 
 ## <a name="common_bindings"></a>适用所有操作系统的常规绑定
 * CapsLock 必须改为 Ctrl:
@@ -56,7 +56,7 @@ OSX Layout on [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com
   * 加大音量: `FN + V` -> `FN + .>` -> `PN`
 
 ## <a name="Move_FN"></a>使用 L_Ctrl 替换 FN 键
-HJKL as cursor keys are more ergonomical to reach by moving the FN to the left Ctrl key location:
+把 FN 键放到键盘左下角能够更好的使用 HJKL 作为方向键（用左手掌的边缘方便的按下）:
 * 切换到需要设置的编辑层(2, 3, 4)，这个只是单个编辑层有效
 * 拔掉键盘的 USB 连接线
 * 把键盘背后的 DIP 4 切换到 ON
@@ -67,6 +67,7 @@ HJKL as cursor keys are more ergonomical to reach by moving the FN to the left C
 
 特别感谢 [davidjenni/pok3r-layouts](https://github.com/davidjenni/pok3r-layouts) 的布局教程，以上内容基于原文进行了部分的替换和中文化处理。以下是原教程涉及的相关参考：
 
+* [r/mk: Pok3r wiki](https://www.reddit.com/r/MechanicalKeyboards/wiki/pok3r)
 * [r/mk: HowTo program pok3r](http://www.reddit.com/r/MechanicalKeyboards/comments/35uy60/guide_howto_program_your_pok3r_programming_layers/)
 * [r/mk: HowTo media controls pok3r](http://www.reddit.com/r/MechanicalKeyboards/comments/37j3sx/guide_modification_pok3r_media_volume_controls_hw/)
  
