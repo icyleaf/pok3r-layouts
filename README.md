@@ -80,7 +80,7 @@
 
 ## Karabiner
 
-可视化配置如下：
+自定义 [private.xml](karabiner/private.xml) 及以下可视化配置如下：
 
 ![OS X 配置](img/karabiner-osx.png)
 

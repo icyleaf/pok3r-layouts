@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>VORTEX</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>POK3R</productname>
+    <productid>0x0141</productid>
+  </deviceproductdef>
+
+  <devicevendordef>
+    <vendorname>OBINS</vendorname>
+    <vendorid>0x0483</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>ANNE</productname>
+    <productid>0x5711</productid>
+  </deviceproductdef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Finder</name>
+    <url type="file">/System/Library/CoreServices/Finder.app</url>
+  </vkopenurldef>
+
+  <appdef>
+    <appname>QQ</appname>
+    <equal>com.tencent.qq</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SKIM</appname>
+    <equal>net.sourceforge.skim-app.skim</equal>
+  </appdef>
+
+  <item>
+    <name>For 60% Keyboard Users</name>
+    <item>
+      <name>Standrad</name>
+      <item>
+        <name>Esc to Backquote(`)</name>
+        <identifier>private.remap.esc_to_blackquote</identifier>
+        <appendix>Short press is `</appendix>
+        <appendix>Shift + Esc is ~</appendix>
+        <appendix>Long press(Hold) is Esc</appendix>
+        <autogen>
+          __KeyToKey__
+          KeyCode::ESCAPE, ModifierFlag::SHIFT_L,
+          KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+          __HoldingKeyToKey__
+          KeyCode::ESCAPE,
+
+          <!-- short press -->
+          @begin
+          KeyCode::BACKQUOTE,
+          @end
+
+          <!-- hold -->
+          @begin
+          KeyCode::ESCAPE,
+          @end
+        </autogen>
+      </item>
+      <item>
+        <name>Hold Backquote(`) to Esc</name>
+        <identifier>private.remap.hold_backquote_to_esc</identifier>
+        <appendix>(short press is original)</appendix>
+        <autogen>
+          __HoldingKeyToKey__
+          KeyCode::BACKQUOTE,
+
+          <!-- short press -->
+          @begin
+          KeyCode::BACKQUOTE,
+          @end
+
+          <!-- hold -->
+          @begin
+          KeyCode::ESCAPE,
+          @end
+        </autogen>
+      </item>
+
+      <item>
+        <name>Hold Tab to Esc</name>
+        <identifier>private.remap.hold_tab_to_esc</identifier>
+        <appendix>(short press is original)</appendix>
+        <autogen>
+          __HoldingKeyToKey__
+          KeyCode::TAB,
+
+          <!-- short press -->
+          @begin
+          KeyCode::TAB,
+          @end
+
+          <!-- hold -->
+          @begin
+          KeyCode::ESCAPE,
+          @end
+        </autogen>
+      </item>
+      <item>
+        <name>Swap Options and CMD</name>
+        <identifier>private.remap.swap_options_CMD</identifier>
+        <appendix>OPTIONS_L(Alt_L) to Command_L</appendix>
+        <appendix>OPTIONS_R(Alt_R) to Command_R</appendix>
+        <appendix>Command_L(Win_L) to OPTIONS_L</appendix>
+        <appendix>Command_R(Win_R) to OPTIONS_R</appendix>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+        <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+      </item>
+
+      <item>
+        <name>Cmd + Option + Backspace to Cmd + Options + Eject</name>
+        <appendix>Instant Sleep(quick black screen and lock)</appendix>
+        <identifier>private.remap.sleep_to_cmd_option_backspace</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::DELETE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+          KeyCode::VK_CONSUMERKEY_EJECT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+        </autogen>
+      </item>
+
+      <item>
+        <name>Using double-press hjkl to arrow keys on Finder</name>
+        <appendix>Change double-press hjkl keys to arrow keys on Finder except editing text (eg. filename).</appendix>
+        <appendix>Change double-press uo keys to UP/DOWN directory when editing text on Finder.</appendix>
+        <identifier>private.remap.hjkl_uo_to_arrow_keys</identifier>
+        <block>
+          <only>FINDER</only>
+          <uielementrole_not>AXTextField, AXTextArea</uielementrole_not>
+          <!-- <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen> -->
+          <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
+          <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
+          <!-- <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen> -->
+          <autogen>__KeyToKey__ KeyCode::U, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen>
+          <autogen>__KeyToKey__ KeyCode::O, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+        </block>
+        <block>
+          <only>SKIM</only>
+          <uielementrole_not>AXTextField</uielementrole_not>
+          <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT</autogen>
+          <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN</autogen>
+          <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP, KeyCode::CURSOR_UP, KeyCode::CURSOR_UP, KeyCode::CURSOR_UP</autogen>
+          <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT, KeyCode::CURSOR_RIGHT, KeyCode::CURSOR_RIGHT, KeyCode::CURSOR_RIGHT</autogen>
+        </block>
+      </item>
+    </item>
+    <item>
+      <name>App Launcher</name>
+      <item>
+        <name>FN + Command_L to App</name>
+        <appendix>(FN is keyboard's Function key, not OS fn key)</appendix>
+        <identifier>private.remap.fn_cmd_to_app</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::PC_APPLICATION,
+          KeyCode::VK_MODIFIER_EXTRA1
+        </autogen>
+      </item>
+
+      <item>
+        <name>App + F to launch finder</name>
+        <appendix>(MUST check FN + Command_L to App)</appendix>
+        <identifier>private.open_app_finder</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::F, ModifierFlag::EXTRA1,
+          KeyCode::VK_OPEN_URL_APP_Finder,
+        </autogen>
+      </item>
+    </item>
+    <item>
+      <name>Screen Shot</name>
+      <appendix>Media keys, backqoute/section mappings.</appendix>
+      <item>
+        <name>F3 to Cmd + Shift + 3</name>
+        <identifier>private.remap.f3_to_cmd_shift_3</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::F3,
+          KeyCode::KEY_3, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+        </autogen>
+      </item>
+      <item>
+        <name>F4 to Cmd + Shift + 4</name>
+        <identifier>private.remap.f4_to_cmd_shift_4</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::F4,
+          KeyCode::KEY_4, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+        </autogen>
+      </item>
+    </item>
+  </item>
+</root>
