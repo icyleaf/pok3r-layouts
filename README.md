@@ -56,7 +56,7 @@
   - 依次按下 `CapsLock` -> `L_Ctrl` -> `PN`
   - `FN + CapsLock` -> `L_Ctrl` -> `PN`
 - Esc 和 \` 互换：
-  - `Esc` -> `FN + Esc` -> `PN`
+  - `Esc` -> `FN + Esc` -> `PN`
   - `FN + Esc` -> `Esc` -> `PN`
 - VIM 党的钟爱的 HJKL 和上下翻页:
   - 左: `FN + H` -> `FN + J` -> `PN`
