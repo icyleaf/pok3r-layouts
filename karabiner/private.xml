@@ -35,6 +35,21 @@
     <equal>net.sourceforge.skim-app.skim</equal>
   </appdef>
 
+  <appdef>
+    <appname>GoogleChrome</appname>
+    <equal>com.google.Chrome</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Safari</appname>
+    <equal>com.apple.Safari</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PowerPoint</appname>
+    <equal>com.microsoft.Powerpoint</equal>
+  </appdef>
+
   <item>
     <name>For 60% Keyboard Users</name>
     <item>
@@ -104,8 +119,33 @@
           @end
         </autogen>
       </item>
+
       <item>
-        <name>Swap Options and CMD</name>
+        <name>Hold Cmd + Option + Backspace to Cmd + Options + Eject</name>
+        <appendix>Instant Sleep(quick black screen and lock)</appendix>
+        <identifier>private.remap.sleep_to_cmd_option_backspace</identifier>
+        <autogen>
+          __HoldingKeyToKey__
+          KeyCode::DELETE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+
+          <!-- short press -->
+          @begin
+          KeyCode::DELETE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+          @end
+
+          <!-- hold -->
+          @begin
+          KeyCode::VK_CONSUMERKEY_EJECT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+          @end
+
+          <!-- __KeyToKey__
+          KeyCode::DELETE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+          KeyCode::VK_CONSUMERKEY_EJECT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L -->
+        </autogen>
+      </item>
+
+      <item>
+        <name>Swap Options and Command</name>
         <identifier>private.remap.swap_options_CMD</identifier>
         <appendix>OPTIONS_L(Alt_L) to Command_L</appendix>
         <appendix>OPTIONS_R(Alt_R) to Command_R</appendix>
@@ -116,35 +156,45 @@
         <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
         <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
       </item>
+    </item>
 
+    <item>
+      <name>Finder</name>
       <item>
-        <name>Cmd + Option + Backspace to Cmd + Options + Eject</name>
-        <appendix>Instant Sleep(quick black screen and lock)</appendix>
-        <identifier>private.remap.sleep_to_cmd_option_backspace</identifier>
-        <autogen>
-          __KeyToKey__
-          KeyCode::DELETE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
-          KeyCode::VK_CONSUMERKEY_EJECT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
-        </autogen>
-      </item>
-
-      <item>
-        <name>Using double-press hjkl to arrow keys on Finder</name>
-        <appendix>Change double-press hjkl keys to arrow keys on Finder except editing text (eg. filename).</appendix>
-        <appendix>Change double-press uo keys to UP/DOWN directory when editing text on Finder.</appendix>
-        <identifier>private.remap.hjkl_uo_to_arrow_keys</identifier>
+        <name>Backspace to Command + Up</name>
+        <name>Windows Explorer Navigation</name>
+        <appendix>(Simlar to Windows OS)</appendix>
+        <identifier>private.remap.backspace_to_command_up_in_finder</identifier>
         <block>
           <only>FINDER</only>
           <uielementrole_not>AXTextField, AXTextArea</uielementrole_not>
-          <!-- <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen> -->
-          <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
-          <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
-          <!-- <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen> -->
+          <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen>
+        </block>
+      </item>
+      <item>
+        <name>Command + U/O to Up/Open</name>
+        <appendix>Command + U to Command + Up</appendix>
+        <appendix>Command + O to Command + Open</appendix>
+        <identifier>private.remap.esc_to_command_up_in_finder</identifier>
+        <block>
+          <only>FINDER</only>
+          <uielementrole_not>AXTextField, AXTextArea</uielementrole_not>
           <autogen>__KeyToKey__ KeyCode::U, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen>
           <autogen>__KeyToKey__ KeyCode::O, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
         </block>
+      </item>
+    </item>
+
+    <item>
+      <name>HJKL for some Applications</name>
+      <item>
+        <name>Using double-press hjkl to arrow keys</name>
+        <appendix>Change double-press hjkl keys to arrow keys on Finder except editing text (eg. filename).</appendix>
+        <appendix>Change double-press uo keys to UP/DOWN directory when editing text on Finder.</appendix>
+        <appendix>Skim/Powerpoint</appendix>
+        <identifier>private.remap.hjkl_uo_to_arrow_keys</identifier>
         <block>
-          <only>SKIM</only>
+          <only>SKIM,PowerPoint</only>
           <uielementrole_not>AXTextField</uielementrole_not>
           <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT</autogen>
           <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN</autogen>
@@ -153,35 +203,13 @@
         </block>
       </item>
     </item>
-    <item>
-      <name>App Launcher</name>
-      <item>
-        <name>FN + Command_L to App</name>
-        <appendix>(FN is keyboard's Function key, not OS fn key)</appendix>
-        <identifier>private.remap.fn_cmd_to_app</identifier>
-        <autogen>
-          __KeyToKey__
-          KeyCode::PC_APPLICATION,
-          KeyCode::VK_MODIFIER_EXTRA1
-        </autogen>
-      </item>
 
-      <item>
-        <name>App + F to launch finder</name>
-        <appendix>(MUST check FN + Command_L to App)</appendix>
-        <identifier>private.open_app_finder</identifier>
-        <autogen>
-          __KeyToKey__
-          KeyCode::F, ModifierFlag::EXTRA1,
-          KeyCode::VK_OPEN_URL_APP_Finder,
-        </autogen>
-      </item>
-    </item>
     <item>
       <name>Screen Shot</name>
       <appendix>Media keys, backqoute/section mappings.</appendix>
       <item>
-        <name>F3 to Cmd + Shift + 3</name>
+        <name>F3 to Snap Full Screen</name>
+        <appendix>F3 to Cmd + Shift + 3</appendix>
         <identifier>private.remap.f3_to_cmd_shift_3</identifier>
         <autogen>
           __KeyToKey__
@@ -190,7 +218,8 @@
         </autogen>
       </item>
       <item>
-        <name>F4 to Cmd + Shift + 4</name>
+        <name>F4 to Snap any square window</name>
+        <appendix>F4 to Cmd + Shift + 4</appendix>
         <identifier>private.remap.f4_to_cmd_shift_4</identifier>
         <autogen>
           __KeyToKey__
