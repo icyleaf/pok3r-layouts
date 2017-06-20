@@ -6,7 +6,7 @@
 ## 调教工具
 
 - POK3R 键盘本身
-- [Karabiner](https://github.com/tekezo/Karabiner)
+- [Karabiner](https://github.com/tekezo/Karabiner) (macOS 10.12 以上请用 [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements))
 
 ## POK3R
 
@@ -23,11 +23,13 @@
 - 第四层：未设置 (红蓝灯，又称紫灯常亮），使用 `FN + /?` 切换
 
 ### POK3R 通用信息
+
 - Vortex 网站的[POK3R 用户说明书](http://www.vortexgear.tw/db/upload/webdata4/vortex_20156296454697283.pdf)
 - 恢复初始化: 按着左右键位的 `ALT` 键直到 LED 灯停止闪烁（大约 5 秒）
 - 恢复当前编辑层: 按着 `FN + R` 键直到 LED 灯停止闪烁（大约 5 秒）
 
 #### 键盘编程
+
 - 默认层无法编程
 - 按下 `FN + R_Ctrl` 进入编程模式，如果 `FN` 键已经分配使用 `L_Ctrl`键（空格键右侧的 LED 蓝灯常亮）
 - 选中你要设置的`目标键` 再按下你要分配的`新键值` (最多可以编程 31 个键）最后按下 `PN` 进行确认保存 (按下目标键后灯会一直闪烁直到改键保存后恢复常亮)
@@ -35,6 +37,7 @@
 - 退出编程模式按下 `FN + R_Ctrl` （空格右侧的 LED 蓝灯熄灭）
 
 ### OS X 键位布局
+
 - `FN + ,<` 切换到第二编辑层
 - [使用 L_Ctrl 替换 FN 键](#Move_FN)
 - 按下 `FN + R_Ctrl` 进入编程模式
@@ -52,6 +55,7 @@
 [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com/#/gists/adf444eabbc6f072c821) 可编辑键盘布局的链接
 
 ### <a name="common_bindings"></a>适用所有操作系统的常规绑定
+
 - CapsLock 必须改为 Ctrl:
   - 依次按下 `CapsLock` -> `L_Ctrl` -> `PN`
   - `FN + CapsLock` -> `L_Ctrl` -> `PN`
@@ -80,16 +84,24 @@
 
 ## Karabiner
 
+### macOS 10.12 以上
+
+自定义 [icyleaf.json](karabiner-elements/icyleaf.json) 及以下可视化配置如下：
+
+1. 修改 `Esc` 为 `\``
+1. 修改 `Caps` 单独使用时为 `Esc`，作为修饰键使用时为 `Ctrl`
+
+### macOS 10.12 以下
+
 自定义 [private.xml](karabiner/private.xml) 及以下可视化配置如下：
 
 ![OS X 配置](img/karabiner-osx.png)
 
 1. 按下 Eject 键机器睡眠（ Ctrl + Shift + Eject 组合键）
-2. 影射 F1-12 功能键为 Mac 原生的功能
-3. 按下两次 Cmd+ + Q 才会退出应用
-4. FN + w 管理 WiFi 的开关
-5. 在系统一些默认应用中非编辑模式使用 `hjkl` 当做方向键
-
+1. 影射 F1-12 功能键为 Mac 原生的功能
+1. 按下两次 Cmd+ + Q 才会退出应用
+1. FN + w 管理 WiFi 的开关
+1. 在系统一些默认应用中非编辑模式使用 `hjkl` 当做方向键
 
 ## 参考来源
 
@@ -102,4 +114,3 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
 本文章基于[署名-相同方式共享 4.0 国际 CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/deed.zh) 协议发布。
-
