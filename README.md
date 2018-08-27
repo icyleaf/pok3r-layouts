@@ -27,6 +27,7 @@
 - Vortex 网站的[POK3R 用户说明书](http://www.vortexgear.tw/db/upload/webdata4/vortex_20156296454697283.pdf)
 - 恢复初始化: 按着左右键位的 `ALT` 键直到 LED 灯停止闪烁（大约 5 秒）
 - 恢复当前编辑层: 按着 `FN + R` 键直到 LED 灯停止闪烁（大约 5 秒）
+- 右 `Alt` + `Space` 切换右下角键位为方向键（R-Control/R-Shift/R-Ctrl/Pin)
 
 #### 键盘编程
 
