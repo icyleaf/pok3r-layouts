@@ -1,6 +1,6 @@
 # POK3R 针对 Mac 的键盘布局
 
-> **不再维护** 本人 POK3R 已出售，转入 [Anne Pro](https://github.com/icyleaf/anne-keyboard)。
+> **另有新欢，不再维护** POK3R 已出售，转入 [Anne Pro](https://github.com/icyleaf/anne-keyboard)。
 
 如果你还不知道 POK3R 键盘的话，请看[评测](https://www.youtube.com/watch?v=8wjW-Or1jg8)。
 对于国内目前的购买渠道请直接淘宝搜索 `poker 3 机械键盘` 或者进行海淘 [amazon](http://smile.amazon.com/Mechanical-Keyboard-Keycaps-Cherry-Mx-Blue/dp/B00OFM51L2/), [mechanicalkeyboards.com](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=1233)
